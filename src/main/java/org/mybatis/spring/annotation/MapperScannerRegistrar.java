@@ -61,6 +61,7 @@ public class MapperScannerRegistrar implements ImportBeanDefinitionRegistrar, Re
   }
 
   /**
+   * 注册 Mapper bean 定义（通过）
    * {@inheritDoc}
    */
   @Override

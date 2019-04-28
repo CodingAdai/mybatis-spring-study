@@ -440,6 +440,7 @@ public class SqlSessionFactoryBean
    */
   @Override
   public void afterPropertiesSet() throws Exception {
+    // 检查 属性
     notNull(dataSource, "Property 'dataSource' is required");
     notNull(sqlSessionFactoryBuilder, "Property 'sqlSessionFactoryBuilder' is required");
     state((configuration == null && configLocation == null) || !(configuration != null && configLocation != null),
@@ -449,6 +450,7 @@ public class SqlSessionFactoryBean
   }
 
   /**
+   * 构建SqlSessionFactory对象
    * Build a {@code SqlSessionFactory} instance.
    *
    * The default implementation uses the standard MyBatis {@code XMLConfigBuilder} API to build a
