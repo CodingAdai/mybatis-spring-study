@@ -30,6 +30,7 @@ import org.springframework.util.StringUtils;
 import org.w3c.dom.Element;
 
 /**
+ * 解析xml中的scan 配置
  * A {#code BeanDefinitionParser} that handles the element scan of the MyBatis. namespace
  * 
  * @author Lishu Luo
