@@ -204,6 +204,7 @@ public class ClassPathMapperScanner extends ClassPathBeanDefinitionScanner {
           LOGGER.warn(
               () -> "Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.");
         }
+        // 设置 其他的bean
         definition.getPropertyValues().add("sqlSessionTemplate",
             new RuntimeBeanReference(this.sqlSessionTemplateBeanName));
         explicitFactoryUsed = true;
